@@ -32,3 +32,7 @@ shape = SubResource("RectangleShape2D_1uqvy")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2(727, 526.5)
 shape = SubResource("RectangleShape2D_i3wvs")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(726, 294.75)
+scale = Vector2(2.6, 39.525)
