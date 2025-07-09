@@ -41,10 +41,10 @@ shape = SubResource("RectangleShape2D_i3wvs")
 position = Vector2(2.00008, 24.4001)
 scale = Vector2(2.6, 74.4)
 
-[node name="ScoreArea" type="Area2D" parent="."]
+[node name="Area2D" type="Area2D" parent="."]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreArea"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(1.5, 0)
 shape = SubResource("RectangleShape2D_78010")
 
-[connection signal="body_entered" from="ScoreArea" to="." method="_on_score_area_body_entered"]
+[connection signal="body_entered" from="Area2D" to="." method="_on_score_area_body_entered"]

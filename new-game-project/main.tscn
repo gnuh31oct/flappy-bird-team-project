@@ -16,7 +16,7 @@ texture = ExtResource("2_1bvp3")
 position = Vector2(1, 1)
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 1.5
+wait_time = 1.143
 autostart = true
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
