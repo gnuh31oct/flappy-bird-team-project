@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cegwcql23p8p7"]
+
+[ext_resource type="Script" uid="uid://dtguur51rp7d2" path="res://main.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dux61bvrujoy6" path="res://sprites/background-day.png" id="2_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://b6di0hlkscteq" path="res://player.tscn" id="3_lquwl"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_h2yge")
+
+[node name="Background-day" type="Sprite2D" parent="."]
+position = Vector2(577, 323)
+scale = Vector2(4, 1.26563)
+texture = ExtResource("2_1bvp3")
+
+[node name="Player" parent="." instance=ExtResource("3_lquwl")]
+position = Vector2(1, 1)
+
+[node name="Timer" type="Timer" parent="."]
+autostart = true
